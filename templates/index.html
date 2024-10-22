@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engetecnica</title>
+</head>
+<body>
+    <h1>Painel Ultrassônico</h1>
+    <form action="/submit" method="post">
+        <!-- Campo para cadastrar um animal -->
+        <label for="novo_animal">Animal:</label>
+        <input type="text" id="novo_animal" name="novo_animal" placeholder="Digite o nome"><br><br>
+        
+        <label for="frequencia">Frequência (0 a 1.000.000 Hz):</label>
+        <input type="number" id="frequencia" name="frequencia" min="0" max="1000000"><br><br>
+        
+        <label for="bioma">Bioma:</label>
+        <select name="bioma" id="bioma">
+            <!-- Opções de biomas -->
+            <option value="amazonia">Amazônia</option>
+            <option value="cerrado">Cerrado</option>
+            <option value="caatinga">Caatinga</option>
+            <option value="mata_atlantica">Mata Atlântica</option>
+            <option value="pampa">Pampa</option>
+            <option value="pantanal">Pantanal</option>
+        </select><br><br>
+        
+        <label for="estacao">Estação do ano:</label>
+        <select name="estacao" id="estacao">
+            <!-- Opções de estações -->
+            <option value="verao">Verão</option>
+            <option value="outono">Outono</option>
+            <option value="inverno">Inverno</option>
+            <option value="primavera">Primavera</option>
+        </select><br><br>
+
+        <label for="data">Data:</label>
+        <input type="date" id="data" name="data"><br><br>
+
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" name="hora"><br><br>
+
+        <!-- Campo para cadastrar uma nova cidade -->
+        <label for="nova_cidade">Cidade:</label>
+        <input type="text" id="nova_cidade" name="nova_cidade" placeholder="Digite o nome"><br><br>
+        
+       <!-- Campo para cadastrar uma nova subestação -->
+       <label for="nova_subestacao">Subestação:</label>
+       <input type="text" id="nova_subestacao" name="nova_subestacao" placeholder="Digite o nome"><br><br>
+
+        <label for="patrimonio">Nº Patrimônio (1 a 100):</label>
+        <input type="number" id="patrimonio" name="patrimonio" min="1" max="100"><br><br>
+        
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
